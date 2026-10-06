@@ -1,6 +1,6 @@
 {
   "name": "dsha-autoconfirm",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "DSHA 敏感应用逐次确认的自动代点看门狗：以确认通知（ID 3003）为指纹，按 policy.json 策略代点「允许」，支付词命中则留给用户手动。",
   "type": "module",
   "main": "lib/index.js",

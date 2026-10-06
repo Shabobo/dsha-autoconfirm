@@ -38,6 +38,9 @@ node <插件目录>/lib/selfcheck.js          # 静态四项：凭据/桥/指纹
 node <插件目录>/lib/selfcheck.js --live    # 真机三连测：指纹 → 生死判 → 代点闭环
 ```
 
+> **v0.1.1**：桥凭据改为**发现式**（多候选头文件 + `.bridge_token` 原始 token 回退，不再写死路径）；
+> 看门狗运行日志写入 **`/tmp/dsha-autoconfirm.log`** —— 排障第一入口，先 cat 它。
+
 `--live` 会提示你**让 agent 在微信/支付宝里点一下**（弹出的确认别手动点），60 秒内自动验完：
 
 | 测什么 | 不绿的含义 |
