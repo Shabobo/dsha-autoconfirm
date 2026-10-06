@@ -1,0 +1,17 @@
+{
+  "enabled": true,
+  "mode": "allow-all",
+  "pollMs": 700,
+  "tapText": "允许",
+  "denyKeywords": [
+    "支付",
+    "付款",
+    "转账",
+    "免密",
+    "密码",
+    "刷脸",
+    "提现",
+    "还款",
+    "付款码"
+  ]
+}

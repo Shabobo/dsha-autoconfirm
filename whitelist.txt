@@ -1,0 +1,13 @@
+# dsha-autoconfirm 白名单 —— 一行一个「包名子串」，命中即自动代点「允许」
+# 规则：子串匹配（和 DSHA 敏感名单同款逻辑），不区分大小写无关，整行才生效
+# 写 `all` 表示所有确认都代点（= 拆掉整道闸，不建议）
+# 以 # 开头 = 注释；空行忽略
+
+# —— 主人点名的微信（小游戏在 com.tencent.mm 进程里）——
+com.tencent.mm
+
+# —— 以下按需放开：去掉行首 # 即启用，包名不确定就发给本鱼帮你查 ——
+# com.eg.android.AlipayGphone     # 支付宝（注意：放开=AI 支付确认也代点）
+# com.smile.gifmaker              # 快手
+# com.ss.android.ugc.aweme        # 抖音
+# tv.danmaku.bili                 # 哔哩哔哩

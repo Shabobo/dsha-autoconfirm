@@ -1,0 +1,24 @@
+{
+  "name": "dsha-autoconfirm",
+  "version": "0.1.0",
+  "description": "DSHA 敏感应用逐次确认的自动代点看门狗：以确认通知（ID 3003）为指纹，按 policy.json 策略代点「允许」，支付词命中则留给用户手动。",
+  "type": "module",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "exports": {
+    ".": "./lib/index.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "policy.json",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
